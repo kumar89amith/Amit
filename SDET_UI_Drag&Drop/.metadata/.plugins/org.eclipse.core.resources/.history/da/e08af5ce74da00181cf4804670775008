@@ -1,0 +1,11 @@
+package snippet;
+
+public class Snippet {
+	WebDriver driver=new FirefoxDriver();
+			driver.get("http://quickfuseapps.com/");
+			driver.manage().window().maximize();
+			
+			Thread.sleep(3000);
+			driver.findElement(By.xpath(".//*[@id='link-create']")).click();
+}
+

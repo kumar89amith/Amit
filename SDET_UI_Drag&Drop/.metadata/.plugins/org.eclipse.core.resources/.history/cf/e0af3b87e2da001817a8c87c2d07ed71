@@ -1,0 +1,31 @@
+createAnApp=.//*[@id='link-create']
+LetGetStarted=.//*[@id='intro-dialog-cont']/div[2]/button
+NewPage=.//*[@id='add-page']
+NewPageText=.//*[@id='create-dialog']/form/p/input
+NewPageCreate=html/body/div[20]/div[3]/button[1]
+
+
+Messaging=.//*[@id='accordion']/h3[4]/a
+SendAnSms=.//*[@id='accordion']/div[4]/ul/li[3]
+mobNo=.//*[@id='module-2']/div[1]/div[3]/div/div[1]/div[2]/textarea
+messageText= .//*[@id='module-2']/div[1]/div[3]/div/div[2]/div/table/tbody/tr/td[1]/div/textarea
+connectStart=(//*[@class='mod-rail mod-south'])[2]/div
+connectSendAnSms=(//*[@class='mod-rail mod-north'])[3]/div
+
+sendAnEmail=.//*[@id='accordion']/div[4]/ul/li[2]
+connectSendAnSmsNotSent=(//*[@class='panel-nodes-attached inner'])[1]/div[2]
+connectSendAnEmail=(//*[contains(@class,'syn-receptor ui-droppable')])[2]
+
+
+
+Basic=.//*[@id='accordion']/h3[1]/a
+HangUpExit=.//*[@id='accordion']/div[1]/ul/li[1]
+connectSendAnSmsSENT=(//*[@class='panel-nodes-attached inner'])[1]/div[1]
+connectExitApp1=(//*[@class='mod-rail mod-north'])[5]/div[1]
+
+
+
+
+
+
+

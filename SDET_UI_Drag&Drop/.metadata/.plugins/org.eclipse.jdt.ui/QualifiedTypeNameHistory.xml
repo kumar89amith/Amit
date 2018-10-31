@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="com.appModule.CreateAnApp"/>
+<fullyQualifiedTypeName name="com.appModule.MessagingSendAnSms"/>
+<fullyQualifiedTypeName name="com.appModule.MessagingSendAnEmail"/>
+<fullyQualifiedTypeName name="com.google.common.collect.ImmutableBiMap.Builder"/>
+<fullyQualifiedTypeName name="com.utility.Constant"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+<fullyQualifiedTypeName name="com.exitApp.ExitApp"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+</qualifiedTypeNameHistroy>

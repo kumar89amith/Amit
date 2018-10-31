@@ -1,0 +1,12 @@
+createAnApp=.//*[@id='link-create']
+LetGetStarted=.//*[@id='intro-dialog-cont']/div[2]/button
+NewPage=.//*[@id='add-page']
+NewPageText=.//*[@id='create-dialog']/form/p/input
+NewPageCreate=html/body/div[20]/div[3]/button[1]
+
+
+Messaging=.//*[@id='accordion']/h3[4]/a
+SendAnSms=.//*[@id='accordion']/div[4]/ul/li[3]
+mobNo=.//*[@id='module-2']/div[1]/div[3]/div/div[1]/div[2]/textarea
+messageText= .//*[@id='module-2']/div[1]/div[3]/div/div[2]/div/table/tbody/tr/td[1]/div/textarea
+

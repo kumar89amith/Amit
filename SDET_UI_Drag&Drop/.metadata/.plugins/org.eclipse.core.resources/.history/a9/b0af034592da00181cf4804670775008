@@ -1,0 +1,27 @@
+package com.appModule;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+public class MessagingSendAnSms {
+	
+	public static void sendAnSms(WebDriver driver) throws Exception
+	{
+		
+driver.findElement(By.xpath(".//*[@id='accordion']/h3[4]/a")).click();
+		
+		Actions drag=new Actions(driver);
+		
+		WebElement dragele1=driver.findElement(By.xpath(".//*[@id='accordion']/div[4]/ul/li[3]"));
+	
+		
+		Thread.sleep(3000);
+		
+		drag.clickAndHold(dragele1).moveByOffset(640, 40).release().build().perform();
+		
+		Thread.sleep(7000);
+	}
+
+}

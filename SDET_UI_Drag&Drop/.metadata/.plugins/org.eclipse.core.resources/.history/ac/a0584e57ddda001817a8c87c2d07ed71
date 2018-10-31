@@ -1,0 +1,5 @@
+createAnApp=.//*[@id='link-create']
+LetGetStarted=.//*[@id='intro-dialog-cont']/div[2]/button
+NewPage=.//*[@id='add-page']
+NewPageText=.//*[@id='create-dialog']/form/p/input
+NewPageCreate=html/body/div[20]/div[3]/button[1]

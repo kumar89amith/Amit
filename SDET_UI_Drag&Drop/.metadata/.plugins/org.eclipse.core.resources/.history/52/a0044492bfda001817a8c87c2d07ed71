@@ -1,0 +1,50 @@
+package com.exitApp;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+public class ExitApp {
+	
+	public static void exitApplication(WebDriver driver) throws Exception
+	{
+		
+		
+		driver.findElement(By.xpath(".//*[@id='accordion']/h3[1]/a")).click();;
+		
+		WebElement exitElemnet1=driver.findElement(By.xpath(".//*[@id='accordion']/div[1]/ul/li[1]"));
+		
+		Actions drag=new Actions(driver);
+		
+		drag.clickAndHold(exitElemnet1).moveByOffset(300, 50).release().build().perform();
+	
+	// First Exit App conneection with Send an SMS for sent
+		
+	WebElement ele1=driver.findElement(By.xpath("(//*[@class='panel-nodes-attached inner'])[1]/div[1]"));
+	WebElement ele2=driver.findElement(By.xpath("(//*[@class='mod-rail mod-north'])[5]/div[1]"));
+	Thread.sleep(2000);
+	drag.dragAndDrop(ele1,ele2).build().perform();
+		
+	// Second Exit App connection with Send an Email for Sent
+	
+	
+	drag.clickAndHold(exitElemnet1).moveByOffset(600, 400).release().build().perform();
+		
+	WebElement ele3=driver.findElement(By.xpath("(//*[@class='panel-nodes-attached inner'])[2]/div[1]"));
+	WebElement ele4=driver.findElement(By.xpath("(//*[@class='mod-rail mod-north'])[6]/div[1]"));
+	Thread.sleep(2000);
+	drag.dragAndDrop(ele3,ele4).build().perform();
+	
+	// Third Exit App connection with Send an Email for Sent
+	
+	drag.clickAndHold(exitElemnet1).moveByOffset(1200, 400).release().build().perform();
+		
+	WebElement ele5=driver.findElement(By.xpath("(//*[@class='panel-nodes-attached inner'])[2]/div[2]"));
+	WebElement ele6=driver.findElement(By.xpath("(//*[@class='mod-rail mod-north'])[7]/div[1]"));
+	Thread.sleep(2000);
+	drag.dragAndDrop(ele5,ele6).build().perform();
+	
+	}
+
+}

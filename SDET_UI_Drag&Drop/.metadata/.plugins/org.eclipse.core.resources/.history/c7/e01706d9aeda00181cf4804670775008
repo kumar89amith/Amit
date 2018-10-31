@@ -1,0 +1,30 @@
+package com.exitApp;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+public class ExitApp {
+	
+	public static void exitApplication(WebDriver driver)
+	{
+		
+		
+		driver.findElement(By.xpath(".//*[@id='accordion']/h3[1]/a")).click();;
+		
+		WebElement exitElemnet1=driver.findElement(By.xpath(".//*[@id='accordion']/div[1]/ul/li[1]"));
+		
+		Actions drag=new Actions(driver);
+		
+		drag.clickAndHold(exitElemnet1).moveByOffset(300, 50).release().build().perform();
+		
+		// WebElement exitElemnet2=driver.findElement(By.xpath(".//*[@id='accordion']/div[1]/ul/li[1]"));
+		drag.clickAndHold(exitElemnet1).moveByOffset(600, 400).release().build().perform();
+		
+		// WebElement exitElemnet3=driver.findElement(By.xpath(".//*[@id='accordion']/div[1]/ul/li[1]"));
+		drag.clickAndHold(exitElemnet1).moveByOffset(1000, 400).release().build().perform();
+		
+	}
+
+}

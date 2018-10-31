@@ -1,0 +1,66 @@
+package com.automationFramework;
+
+import java.util.concurrent.TimeUnit;
+
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.appModule.CreateAnApp;
+import com.appModule.MessagingSendAnEmail;
+import com.appModule.MessagingSendAnSms;
+import com.exitApp.ExitApp;
+import com.utility.Constant;
+
+public class TestNgAction {
+	
+	public WebDriver driver;
+	 
+	@Test
+   public void beforeMethod() throws Exception {
+ 
+	 	driver = new FirefoxDriver();
+ 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+ 		driver.get(Constant.URL);
+ 		driver.manage().window().maximize();
+        }
+	
+	@Test (dependsOnMethods = { "beforeMethod" })
+	public void clickOnAppCreation() throws Exception {
+		
+			CreateAnApp.appCreation(driver); 	 
+	        }
+	
+	
+	@Test (dependsOnMethods = { "clickOnAppCreation" })
+	public void sendAnSmsMethod() throws Exception {
+		
+		MessagingSendAnSms.sendAnSms(driver);	 
+	        }
+	
+	@Test (dependsOnMethods = { "sendAnSmsMethod" })
+	public void sendAnEmailMethod() throws Exception {
+		
+		MessagingSendAnEmail.sendAnEmail(driver);	 
+	        }
+	
+	@Test(dependsOnMethods = { "sendAnEmailMethod" })
+	public void ExitAppMethod() throws Exception {
+		
+		ExitApp.exitApplication(driver);	 
+	        }
+	
+	 
+	   @AfterMethod
+	 
+	  public void afterMethod() {
+	 
+		    driver.quit();
+	 
+	        }
+
+}

@@ -1,2 +1,6 @@
 # Amit
-Its my name I love to play cricket. I love foods.
+***Quickfuseapps*** is a Web application and I have written code to test via Automation.
+Technologies used:
+Java
+Selenium
+Muduler Framework with TestNg to generate the Report.

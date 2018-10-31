@@ -1,0 +1,2 @@
+createAnApp=.//*[@id='link-create']
+LetGetStarted=.//*[@id='intro-dialog-cont']/div[2]/button

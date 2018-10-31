@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52843" started-at="2018-10-28T18:56:37Z" finished-at="2018-10-28T18:57:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52843" started-at="2018-10-28T18:56:37Z" finished-at="2018-10-28T18:57:30Z">
+      <class name="com.automationFramework.TestNgAction">
+        <test-method status="PASS" signature="ApplicationLaunch()[pri:1, instance:com.automationFramework.TestNgAction@1799e2e2]" name="ApplicationLaunch" duration-ms="12921" started-at="2018-10-29T00:26:37Z" finished-at="2018-10-29T00:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationLaunch -->
+        <test-method status="PASS" signature="clickOnAppCreation()[pri:2, instance:com.automationFramework.TestNgAction@1799e2e2]" name="clickOnAppCreation" duration-ms="7391" started-at="2018-10-29T00:26:50Z" finished-at="2018-10-29T00:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnAppCreation -->
+        <test-method status="PASS" signature="sendAnSmsMethod()[pri:3, instance:com.automationFramework.TestNgAction@1799e2e2]" name="sendAnSmsMethod" duration-ms="11676" started-at="2018-10-29T00:26:58Z" finished-at="2018-10-29T00:27:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendAnSmsMethod -->
+        <test-method status="PASS" signature="sendAnEmailMethod()[pri:4, instance:com.automationFramework.TestNgAction@1799e2e2]" name="sendAnEmailMethod" duration-ms="4522" started-at="2018-10-29T00:27:09Z" finished-at="2018-10-29T00:27:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendAnEmailMethod -->
+        <test-method status="PASS" signature="ExitAppMethod()[pri:5, instance:com.automationFramework.TestNgAction@1799e2e2]" name="ExitAppMethod" duration-ms="15651" started-at="2018-10-29T00:27:14Z" finished-at="2018-10-29T00:27:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExitAppMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:6, instance:com.automationFramework.TestNgAction@1799e2e2]" name="afterMethod" duration-ms="638" started-at="2018-10-29T00:27:29Z" finished-at="2018-10-29T00:27:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.automationFramework.TestNgAction -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

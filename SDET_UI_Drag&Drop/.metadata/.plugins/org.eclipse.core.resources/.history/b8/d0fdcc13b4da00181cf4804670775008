@@ -1,0 +1,42 @@
+package com.exitApp;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+public class ExitApp {
+	
+	public static void exitApplication(WebDriver driver) throws Exception
+	{
+		
+		
+		driver.findElement(By.xpath(".//*[@id='accordion']/h3[1]/a")).click();;
+		
+		WebElement exitElemnet1=driver.findElement(By.xpath(".//*[@id='accordion']/div[1]/ul/li[1]"));
+		
+		Actions drag=new Actions(driver);
+		
+		drag.clickAndHold(exitElemnet1).moveByOffset(300, 50).release().build().perform();
+	
+		System.out.println("hiiiiiiiiiii");
+		
+	WebElement ele1=driver.findElement(By.xpath("(//*[@class='panel-nodes-attached inner'])[1]/div[1]"));
+	System.out.println("helll");
+	
+	WebElement ele2=driver.findElement(By.xpath("(//*[@class='mod-rail mod-north'])[3]/div[1]"));
+	Thread.sleep(2000);
+	
+	System.out.println("llllllllllll");
+	
+	drag.dragAndDrop(ele1,ele2).build().perform();
+		
+	System.out.println("opopop");	
+	//	drag.clickAndHold(exitElemnet1).moveByOffset(600, 400).release().build().perform();
+		
+		
+	//	drag.clickAndHold(exitElemnet1).moveByOffset(1200, 400).release().build().perform();
+		
+	}
+
+}
